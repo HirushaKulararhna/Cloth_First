@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { SearchIcon, UserIcon, ShoppingBagIcon, Menu, ChevronLeft } from 'lucide-react'
+import {Link} from 'react-router-dom'
 
 
 const Navbar = () => {  
@@ -10,7 +11,7 @@ const Navbar = () => {
   
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
-      <h1 className='text-2xl italic font-semibold cursor-pointer text-stone-900'>CLOTH_FIRST</h1>
+      <Link to='/'><h1 className='text-2xl italic font-semibold cursor-pointer text-stone-900'>CLOTH_FIRST</h1></Link>
 
       <ul className='hidden gap-8 text-sm text-gray-700 sm:flex'>
         <li> 
